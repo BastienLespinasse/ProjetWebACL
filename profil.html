@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="..\CSS\profil.css" />
+        <script type="text/javascript" src="..\JS\profil.js">
+    </script>
+        <title>Mon profil</title>
+    </head>
+
+    <body>
+    	
+    	<div id="header">
+            <table id="header_table"><tr><td id="header_td">
+                <ul id="menu">
+                    <li id="accueil"><a href="#"><img src="../images/home.png" id="home_ico" />accueil</a></li>
+                    <li id="profil"><a href="profil.html"><img src="../images/people.png" id="people_ico" />Mon profil</a></li>
+                    <li id="parametres"><a href="#"><img src="../images/parametres.png" id="parametres_ico" />Paramètres</a></li>
+                    <li id="deconnexion"><a href="page1.html" onClick="deconnexion()"><img src="../images/deconnexion.png" id="deconnexion_ico" onClick="deconnexion()" /> Se déconnecter</a></li>
+                </ul>
+            </td></tr></table>
+        </div>
+
+        <div id="contenu">    
+            <table id="contenu_table"><tr><td id="contenu_td">
+                
+                <div id="infos">
+                    <table id="infos_table">
+                        <tr id="infos_tr">
+                            <td id="infos_photo">
+                                <img src="../images/profil.jpg" id="photo_profil" />
+                            </td>
+                            <td id="infos_texte">
+                            <ul id="icones_infos">
+                                    <li><a href="mes_photos.html"><img src="../images/photo.png" id="photo_ico" /></a></li>
+                                    <li><a href="mes_albums.html"><img src="../images/album.png" id="album_ico" /></a></li>
+                                    <li><a href="#"><img src="../images/amis.png" id="amis_ico" /></a></li>
+                                    <li><a href="#"><img src="../images/admin.png" id="admin_ico" /></a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="mes_photos.html">Mes photos</a></li>
+                                    <li><a href="mes_albums.html">Mes albums</a></li>
+                                    <li><a href="#">Mes amis</a></li>
+                                    <li><a href="#">Espace administrateur</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <table id="photos_table">
+                    <tr id="photos_tr">
+                        <td id="photos_td" onMouseOver="barre()" onMouseOut="non_barre()">
+                           <div id="barre">
+                               <ul id="barre_tache">
+                                    <li><img src="../images/jaime_blanc.png" id="jaime_ico" onClick="jaime_rouge()" value="0"/></li>
+                                    <li><img src="../images/cadenas.png" id="cadenas_ico" onClick="cadenas_jaune()"  value="0" /></li>
+                                    <li><img src="../images/info.png" id="info_ico" /></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td id="photos_td">
+                            <div id="barre"></div>
+                        </td>
+                        <td id="photos_td">
+                            <div id="barre"></div>
+                        </td>
+                    </tr>
+                </table>
+            </td></tr></table>  
+        </div>
+
+        <footer>
+            </br><p id="lignef1">Nom_site</p>
+            <div id="lignef2">
+                <ul>
+                    <li><a href="a_propos.html">A propos</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+
+</head>

@@ -1,0 +1,278 @@
+html body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: verdana;
+	min-width: 1300px;
+	min-height: 600px;
+	background-color: #456e84;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+/********* HEADER *********/
+
+#header_table
+{
+	height: 70px;
+	width: 80%;
+	border-collapse: collapse;
+	border-radius:15px;
+	text-align: center;
+	font-family: verdana;
+	background-color: rgb(29,33,35);
+}
+
+#header_td
+{
+	height: 100%;
+	padding: 0;
+	vertical-align: middle;
+}
+
+#header
+{
+	margin-top: 50px;
+	margin: 20px auto;
+	padding-top: 20;
+	padding-bottom: 20;
+	margin-left: 15%;
+}
+
+/********* menu du header *********/
+
+#menu
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-right: 50px;
+}
+
+#accueil, #profil, #parametres, #deconnexion
+{
+	display: inline-block;	
+	padding: 0;		
+	margin: 0;	
+	width: 200px;
+}
+
+#home_ico, #people_ico, #parametres_ico, #deconnexion_ico
+{
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+}
+
+/********* CONTENU *********/
+
+#contenu_table
+{
+	height: 100%;
+	width: 80%;
+	border-collapse: collapse;
+	text-align: center;
+	font-family: verdana;
+	background-color: #456e84;
+	margin-left: 12%;
+}
+
+#contenu_td
+{
+	padding: 0;
+	vertical-align: top;
+}
+
+#infos
+{
+	height: 30%;
+	width: 100%;	
+	background-color: #456e84;
+	margin-bottom: 20;
+}
+
+#infos_table
+{
+	background-color: #456e84;
+	width: 80%;
+	height: 100%;
+	margin-left: 80px;	
+}
+
+#photo_ico, #album_ico, #amis_ico, #admin_ico
+{
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	padding-right: 40px;
+	padding-bottom: 10px;
+}
+
+#icones_infos
+{
+	padding-right: 5px;
+}
+
+#admin_ico
+{
+	padding-left: 30px;
+}
+
+#infos_photo
+{
+	width: 200px;
+	height: 200px;
+	background-color: #456e84;
+}
+
+#photo_profil
+{
+	width: 200px;
+	height: 200px;
+	border-radius:180px;
+	border-style: solid;
+	border-color: white;
+	border-width: 3px;	
+}
+
+/********* BARRE D'OPTIONS *********/
+
+#options_table
+{
+	height: 50px;
+	width: 60%;
+	border-collapse: collapse;
+	border-radius:15px;
+	font-family: verdana;
+	background-color: grey;
+	margin-left: 70px;
+}
+
+#options_td
+{
+	height: 100%;
+	padding: 0;
+}
+
+#options
+{
+	margin-top: 30px;
+	margin: 20px auto;
+	padding-top: 10;
+	padding-bottom: 20;
+	margin-left: 15%;
+}
+
+#ajouter, #supprimer, #modifier
+{
+	display: inline-block;	
+	padding: 0;		
+	margin: 0;	
+	width: 150px;
+}
+
+#ajouter_ico, #supprimer_ico, #modifier_ico
+{
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+}
+
+/********* PHOTOS/ALBUMS *********/
+
+#photos_table
+{
+	width: 400px;
+	height: 200px;
+	border-style: solid;
+	border-color: #456e84;
+	border-spacing: 20px;
+	margin-top: 70px;
+}
+
+#photos_td
+{
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+	background-color: black;
+	vertical-align: bottom;
+	height: 300px;
+}
+
+#barre
+{
+	height: 20%;
+	width: 300px;
+	background-color: grey;
+	opacity: 0.5;
+	visibility: hidden;
+}
+
+#jaime_ico, #cadenas_ico, #info_ico, #cadenasJ
+{
+	width: 30px;
+	height: 30px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+ul
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+li
+{
+	display: inline-block;	
+	padding: 0;		
+	margin: 0;	
+}
+
+#jaime
+{
+	width: 40px; 
+	height: 40px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+footer
+{
+	height: 70px;
+	background-color: #4a4f55;
+	margin-top: 60px;
+}
+
+#lignef1
+{
+	margin: auto;
+	color: #B2B6B8;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+
+#lignef2
+{
+	margin: auto;
+	color: #B2B6B8;
+	text-align: center;
+}
+
+a, ul.lignef2
+{
+	color: #B2B6B8;
+	text-decoration: none;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
