@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>inscription</title>
+		<link rel="stylesheet" href="..\CSS\inscription.css" /> 
+		<script type="text/javascript" src="..\JS\inscription.js">
+  	</script>
+	</head>
+
+	<body>
+			<table id="page_table"><tr><td id="page_td">
+				<form id="form">
+						<input id="prenom" placeholder="Prénom" name="prenom" value="" onBlur="verif_prenom(prenom)"></br></br>
+						<input id="nom" placeholder="Nom" name="nom" value="" onBlur="verif_nom(nom)"></br></br>
+						<input id="login" placeholder="Login" name="login" value="" onBlur="verif_login(login)"></br></br>
+						<input id="date" type="date" name="date" value="" onBlur=""></br></br>
+						<div id="sexe">	
+							<ul>
+								<li><label for="homme">Homme</label><input type="radio" id="homme" name="sexe"/></li>
+								<li><label for="femme">Femme</label><input type="radio" id="femme" name="sexe"/></li>
+							</ul>
+						</div>
+						<input id="mail" placeholder="Adresse e-mail" name="mail" value="" onBlur="verif_mail(mail)"></br></br>
+						<input type="password" id="mdp" placeholder="Mot de passe" name="mdp" value="" onBlur="verif_mdp(mdp)"></br></br>
+						<input type="password" id="mdp2" placeholder="Confirmer le mot de passe" name="mdp2" value="" onBlur="verif_mdp2(mdp2)"></br></br>
+						<input id="bouton" type="submit" name="bouton" value="valider" onClick="valider()">
+				</form>	
+			</td></tr></table>	
+
+	</body>
+	
+</html>
