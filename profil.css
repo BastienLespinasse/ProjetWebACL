@@ -63,12 +63,22 @@ a:hover
 	width: 200px;
 }
 
-#home_ico, #people_ico, #parametres_ico, #deconnexion_ico
+#home_ico, #people_ico, #parametres_ico 
 {
 	width: 22px;
 	height: 22px;
 	vertical-align: middle;
 	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+#deconnexion_ico
+{
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	padding-right: 5px;
+	padding-bottom: 5px;
 }
 
 /********* CONTENU *********/
@@ -132,6 +142,16 @@ a:hover
 	width: 200px;
 	height: 200px;
 	background-color: #456e84;
+}
+
+#texte_infos
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	width: 647px;
+	height: 19px;
 }
 
 #photo_profil
@@ -250,6 +270,80 @@ li
 	cursor: pointer;
 }
 
+/********* Amis *********/
+
+#amis_table
+{
+	width: 500px;
+	height: 80px;
+	margin-top: 70px;
+}
+
+#amis_photo_td
+{
+	background-color: #456e84;
+	vertical-align: middle;
+	height: 80px;
+	width: 12%;
+	text-align: center;
+}
+
+#photo_profil_amis
+{
+	width: 80px; 
+	height: 80px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+}
+
+#info_ico_amis, #supprimer_ico_amis
+{
+	width: 30px;
+	height: 30px;
+}
+
+#amis_prenom_td
+{
+	background-color: #456e84;
+	vertical-align: middle;
+	height: 10px;
+	width: 12%;
+	text-align: center;
+	color: white;
+}
+
+#amis_nom_td
+{
+	background-color: #456e84;
+	vertical-align: middle;
+	height: 100%;
+	width: 12%;
+	text-align: center;
+	color: white;
+}
+
+#amis_infos_td
+{
+	background-color: #456e84;
+	vertical-align: middle;
+	height: 10px;
+	width: 9%;
+	text-align: center;
+}
+
+#amis_suppr_td
+{
+	background-color: #456e84;
+	vertical-align: middle;
+	height: 10px;
+	width: 9%;
+	text-align: center;
+}
+
+
+
 footer
 {
 	height: 70px;
@@ -282,3 +376,36 @@ a, ul.lignef2
 	padding-left: 20px;
 }
 
+
+
+
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
