@@ -21,6 +21,7 @@ a:hover
 {
 	height: 70px;
 	width: 80%;
+	/*width: 950px;*/
 	border-collapse: collapse;
 	border-radius:15px;
 	text-align: center;
@@ -76,11 +77,13 @@ a:hover
 {
 	height: 100%;
 	width: 80%;
+	/*height: 1000px;
+	width: 1200px;*/
 	border-collapse: collapse;
 	text-align: center;
 	font-family: verdana;
 	background-color: #456e84;
-	margin-left: 12%;
+	margin-left: 11%;
 }
 
 #contenu_td
@@ -250,6 +253,7 @@ li
 footer
 {
 	height: 70px;
+	width: 1347px;
 	background-color: #4a4f55;
 	margin-top: 60px;
 }
