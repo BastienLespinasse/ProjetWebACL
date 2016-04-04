@@ -63,12 +63,23 @@ a:hover
 	width: 200px;
 }
 
-#home_ico, #people_ico, #parametres_ico, #deconnexion_ico
+
+#home_ico, #people_ico, #parametres_ico
 {
 	width: 22px;
 	height: 22px;
 	vertical-align: middle;
 	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+#deconnexion_ico
+{ 
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	padding-right: 5px;
+	padding-bottom: 5px;
 }
 
 /********* CONTENU *********/
@@ -132,6 +143,16 @@ a:hover
 	width: 200px;
 	height: 200px;
 	background-color: #456e84;
+}
+
+#texte_infos
+{ 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	width: 647px;
+	height: 19px;
 }
 
 #photo_profil
