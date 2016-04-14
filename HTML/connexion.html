@@ -4,8 +4,9 @@
 		<meta charset="utf-8" />
 		<title>connexion</title>
 		<link rel="stylesheet" href="..\CSS\connexion.css" /> 
-		<script type="text/javascript" src="..\JS\connexion.js">
-  	</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		
 	</head>
 
 	<body>
@@ -13,11 +14,14 @@
 				<form id="form">
 						<input placeholder="Login" name="login" value="" onBlur="verif_login(login)"></br></br>
 						<input type="password" placeholder="Mot de passe" name="mdp" value="" onBlur="verif_age(age)"></br></br>
-						<input id="bouton" type="submit" name="bouton" value="valider" onClick= "..\HTML\profil.html">
+						<input id="bouton" type="submit" name="bouton" value="valider" onClick= "..\HTML\accueil.html">
 						<p id="inscription">Vous n'avez pas de compte ? <a href="inscription.html">Inscrivez-vous !</a></p>
 				</form>	
 			</td></tr></table>	
 
 	</body>
+
+	<script type="text/javascript" src="..\JS\connexion.js">
+  	</script>
 	
 </html>
