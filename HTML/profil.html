@@ -1,83 +1,134 @@
-<!DOCTYPE>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="..\CSS\profil.css" />
-        <script type="text/javascript" src="..\JS\profil.js">
-    </script>
-        <title>Mon profil</title>
-    </head>
+	<head>
+		<meta charset="utf-8" />
+		<title>nom_du_site</title>
+		<link rel="stylesheet" href="..\CSS\page1.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		 
+	</head>
 
-    <body>
-    	
-    	<div id="header">
-            <table id="header_table"><tr><td id="header_td">
-                <ul id="menu">
-                    <li id="accueil"><a href="#"><img src="../images/home.png" id="home_ico" />accueil</a></li>
-                    <li id="profil"><a href="profil.html"><img src="../images/people.png" id="people_ico" />Mon profil</a></li>
-                    <li id="parametres"><a href="#"><img src="../images/parametres.png" id="parametres_ico" />Paramètres</a></li>
-                    <li id="deconnexion"><a href="page1.html" onClick="deconnexion()"><img src="../images/deconnexion.png" id="deconnexion_ico" onClick="deconnexion()" /> Se déconnecter</a></li>
-                </ul>
-            </td></tr></table>
-        </div>
+	<body>
+		<div id="image1">
+		<table id="page_table1"><tr><td id="page_td1">
+			<div id="nom_site">
+				<p>Nom_site</p>
+			</div>
+			<div id="phrase1">
+				<p>Revivez chaque instant</p>
+			</div>
+			<div id="phrase2">
+				<p>Partagez vos plus belles photos de n'importe où</p>
+			</div>
+			<div id="boutons">
+				<input id="bouton1" type="button" class="fond1" name="commencer" value="INSCRIPTION" onClick="self.location.href='inscription.html'" onMouseOver="couleur_bouton1()" onMouseOut="retour_couleur1()">
+				<input id="bouton2" type="button" class="fond1" name="connexion" value="CONNEXION" onClick="self.location.href='connexion.html'" onMouseOver="couleur_bouton2()" onMouseOut="retour_couleur2()">
+			</div>
+			<div id="bouton3"><img src="../images/fleche.png" id="fleche" onClick="scroll()" onMouseOver="negatif()" onMouseOut="retour_normal()" /></div>-
+		</td></tr></table>	
+		</div>
+		<div id="image2">
+			<table id="page_table2"><tr><td id="page_td2">
+				<div id="ligne21"><p>Profitez d'une plateforme sophistiquée</p></div>
+				<div id="ligne22"><p>Créez des albums, naviguez parmi vos plus belles photos, partagez les avec vos amis</p></div>
+				<ul>
+					<li><div id="photo0"><img src="../images/image0.jpg" id="app_pho" /></div></li>
+					<li><div id="photo1"><img src="../images/image1.jpg" id="app_pho" /></div></li>
+					<li><div id="photo2"><img src="../images/image2.jpg" id="app_pho" /></div></li>
+					<li><div id="photo3"><img src="../images/image3.jpg" id="app_pho" /></div></li>
+					<li><div id="photo4"><img src="../images/image4.jpg" id="app_pho" /></div></li>
+				</ul>
+		</td></tr></table>
+		</div>
+		<div id="image3">
+		<table id="page_table3"><tr><td id="page_td3">
+			<div id="ligne31"><p>Importer vos photos depuis tous vos appareils</p></div>
+			<ul>
+				<li><div id="appareil"><img src="../images/app_photo.png" id="app_pho" /></div></li>
+				<li><div id="ecran"><img src="../images/ecran.png" id="ecran_ordi"/></div></li>
+				<li><div id="smartphone"><img src="../images/smartphone.png" id="portable"/></div></li>
+			</ul>
+		</td></tr></table>	
+		</div>
+		<div id="image4">
+			<table id="page_table4"><tr><td id="page_td4">
+			<div id="boutons4">
+				<input id="bouton4" type="button" class="fond1" name="commencer" value="INSCRIPTION" onClick="self.location.href='inscription.html'" onMouseOver="couleur_bouton4()" onMouseOut="retour_couleur4()">
+			</div>
+		</td></tr></table>	
+		</div>
 
-        <div id="contenu">    
-            <table id="contenu_table"><tr><td id="contenu_td">
-                
-                <div id="infos">
-                    <table id="infos_table">
-                        <tr id="infos_tr">
-                            <td id="infos_photo">
-                                <img src="../images/profil.jpg" id="photo_profil" />
-                            </td>
-                            <td id="infos_texte">
-                            <ul id="icones_infos">
-                                    <li><a href="mes_photos.html"><img src="../images/photo.png" id="photo_ico" /></a></li>
-                                    <li><a href="mes_albums.html"><img src="../images/album.png" id="album_ico" /></a></li>
-                                    <li><a href="#"><img src="../images/amis.png" id="amis_ico" /></a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="mes_photos.html">Mes photos</a></li>
-                                    <li><a href="mes_albums.html">Mes albums</a></li>
-                                    <li><a href="#">Mes amis</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+		<footer>
+			</br><p id="lignef1">Nom_site</p>
+			<div id="lignef2">
+				<ul>
+					<li><a href="a_propos.html">A propos</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 
-                <table id="photos_table">
-                    <tr id="photos_tr">
-                        <td id="photos_td" onMouseOver="barre()" onMouseOut="non_barre()">
-                           <div id="barre">
-                               <ul id="barre_tache">
-                                    <li><img src="../images/jaime_blanc.png" id="jaime_ico" onClick="jaime_rouge()" value="0"/></li>
-                                    <li><img src="../images/cadenas.png" id="cadenas_ico" onClick="cadenas_jaune()"  value="0" /></li>
-                                    <li><img src="../images/info.png" id="info_ico" /></li>
-                                </ul>
-                            </div>
-                        </td>
-                        <td id="photos_td">
-                            <div id="barre"></div>
-                        </td>
-                        <td id="photos_td">
-                            <div id="barre"></div>
-                        </td>
-                    </tr>
-                </table>
-            </td></tr></table>  
-        </div>
 
-        <footer>
-            </br><p id="lignef1">Nom_site</p>
-            <div id="lignef2">
-                <ul>
-                    <li><a href="a_propos.html">A propos</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                </ul>
-            </div>
-        </footer>
+	<script type="text/javascript" src="..\JS\essai.js"></script>
+	<!--<script src="js/jquery.inview.min.js"></script>-->
+ 
+	<script type="text/javascript">
 
-    </body>
+	 	var scrollfunction = $(window).scroll(function()
+	 	{
+			var scrollTop = $(window).scrollTop()
+			var bool = 0;
 
-</head>
+		      if ((scrollTop < 1400)&&(scrollTop > 1250))
+		      {
+				$(function()
+				{
+			   		$("#appareil").animate({"marginLeft":"0px"},1000);
+			   		$("#smartphone").animate({"marginLeft":"-240px"},1000);
+			   		$("#ecran").animate({"marginLeft":"-240px"},1000);
+			   		bool = 1;
+			   		
+				});
+
+				$(function()
+				{
+			   		$("#appareil").animate({"marginLeft":"0px"},1000);
+			   		$("#smartphone").animate({"marginLeft":"0px"},1000);
+			   		$("#ecran").animate({"marginLeft":"0px"},1000);
+			   		bool = 0;
+			   		
+				});
+		      }     
+		     
+		     if ((scrollTop < 1000)&&(scrollTop > 620))
+		      {
+			      $(function()
+					{
+			      		$("#photo0").animate({"marginLeft":"0px"},2000);
+			      		$("#photo1").animate({"marginLeft":"0px"},2000);
+				   		$("#photo3").animate({"marginLeft":"0px"},2000);
+				   		$("#photo2").animate({"marginLeft":"0px"},2000);
+				   		$("#photo4").animate({"marginLeft":"0px"},2000);
+				   	});
+			      
+
+			      $(function()
+					{
+						$("#photo0").animate({"marginLeft":"0px"},2000);
+				   		$("#photo1").animate({"marginLeft":"-240px"},2000);
+				   		$("#photo3").animate({"marginLeft":"-240px"},2000);
+				   		$("#photo2").animate({"marginLeft":"-240px"},2000);
+				   		$("#photo4").animate({"marginLeft":"-240px"},2000);
+					});
+
+			   }		  		
+
+		}); 
+
+	</script>
+
+	<script type="text/javascript" src="../JS\page1.js">
+  	</script>
+	
+</html>
