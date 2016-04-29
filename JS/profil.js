@@ -1,7 +1,3 @@
-
-
-
-
 function deconnexion()
 {
 	if (confirm("Vous désirez vraiment quitter?"))
@@ -21,8 +17,7 @@ $(".img").click(function(){
   $(this).closest("td").next().children().css("visibility", "visible");
 });
 
-$(".save").click(function(){
-  $(this).css("visibility", "hidden");
+$(".fermer_modif").click(function(){
   $(this).closest("td").children().css("visibility", "hidden");
 });
 
@@ -95,6 +90,123 @@ else
 });
 
 
+$(".supprimer_bouton").click(function(){
+  $(".supprimer").css("visibility", "visible");
+  $(".valider").css("visibility", "visible");
+   $(".annuler").css("visibility", "visible");
+});
+
+$(".annuler").click(function(){
+  $(".supprimer").css("visibility", "hidden");
+  $(".modifier").css("visibility", "hidden");
+  $(".valider").css("visibility", "hidden");
+   $(".annuler").css("visibility", "hidden");
+});
+
+$(".modifier_bouton").click(function(){
+  $(".modifier").css("visibility", "visible");
+  $(".valider").css("visibility", "visible");
+   $(".annuler").css("visibility", "visible");
+});
 
 
+$(".amis_infos_td").click(function(){	/*si on clique sur l'icone info*/
+	$(".amis_infos_td").next("td").next("td").css("visibility", "hidden");	/*on efface les éventuelles infos déjà à l'écran */
+  	$(this).next("td").next("td").css("visibility", "visible");	/*on affiche les infos correspondants à l'icone cliqué*/
+});
 
+$(".fermer_infos").click(function(){	/*si on clique sur l'icone fermer*/
+	$(".amis_infos_td").next("td").next("td").css("visibility", "hidden");	/*on efface les éventuelles infos déjà à l'écran */
+});
+
+
+$(".ajouter").click(function(){  /*si on clique sur ajouter */
+  $(".ajout").css("visibility", "visible");  /*on efface les éventuelles infos déjà à l'écran */
+});
+
+$(".ajouter_album").click(function(){  /*si on clique sur ajouter */
+  $(".ajout_album").css("visibility", "visible");  /*on efface les éventuelles infos déjà à l'écran */
+});
+
+
+/********* Gallerie Photos et zoom *********/
+
+$(document).ready(function() 
+{
+  $('.galleriePhotos-Zoom').magnificPopup(
+  {
+    delegate: 'a',
+    type: 'image',
+    closeOnContentClick: false,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: 
+    {
+      verticalFit: true,
+      titleSrc: function(item) 
+      {
+        return item.el.attr('titrePhoto') + ' &middot'
+      }
+    },
+
+    gallery: 
+    {
+      enabled: true
+    },
+
+    zoom: 
+    {
+      enabled: true,
+      duration: 300,
+      opener: function(element) 
+      {
+        return element.find('img');
+      }
+    }
+    
+  });
+});
+
+/******** CODE POUR LES AGRANDISSEMENTS DES PHOTOS DE PROFIL **********/
+
+$(document).ready(function() 
+{
+  $('.gallerieAvatar-Zoom').magnificPopup(
+  {
+    delegate: 'a',
+    type: 'image',
+    closeOnContentClick: false,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: 
+    {
+      verticalFit: true,
+      titleSrc: function(item) 
+      {
+        return item.el.attr('titrePhoto') + ' &middot'
+      }
+    },
+
+    zoom: 
+    {
+      enabled: true,
+      duration: 300,
+      opener: function(element) 
+      {
+        return element.find('img');
+      }
+    }
+    
+  });
+});
+
+/******** CODE POUR LES POP-UP INFOS **********/
+
+$(".info_ico").click(function(){ /*si on clique sur l'icone info*/
+  $(".infos_photo").css("visibility", "hidden");  /*on efface les éventuelles infos déjà à l'écran */
+    $(this).closest("li").next("div").css("visibility", "visible"); /*on affiche les infos correspondants à l'icone cliqué*/
+});
+
+$(".fermer_infos").click(function(){  /*si on clique sur l'icone fermer*/
+  $(this).parent("div").css("visibility", "hidden");  /*on efface les éventuelles infos déjà à l'écran */
+});
